@@ -1,13 +1,11 @@
-import { Config, browser } from "protractor";
+import { Config} from "protractor";
 import { suites } from "../Suites/Suites";
-import * as nodemailer from "nodemailer";
 import * as moveFile from "move-file";
 import * as process from "process";
 let HtmlReporter = require("protractor-beautiful-reporter");
 let jasmineReporters = require("jasmine-reporters");
 let exec = require("child_process");
 let locateChrome = require("locate-chrome");
-var fs = require("fs");
 let AllureReporter = require("jasmine-allure-reporter");
 let colors = require("colors");
 let displayProcessor = require("jasmine-spec-reporter").DisplayProcessor;
@@ -15,7 +13,7 @@ let globals = require("protractor");
 let totalDateString: string;
 let jsonsFolderName: string = "jsons";
 let screenshotsFolderName: string = "screenshots";
-let reportName: string = "Gayltix";
+let reportName: string = "TestVagrant";
 let hideSkippedTest: any;
 let reportDirectory: string =
   process.cwd() + "/Project/TestReports/";
@@ -25,8 +23,6 @@ let oldReportPath: string =
   process.cwd() + "/Project/OldTestReports";
 let reportURl: string =
   reportDirectory + reportFolder + "/" + reportName + ".html";
-let pdfReport: string =
-  reportDirectory + reportFolder + "/" + reportName + ".pdf";
 let convert = (input) => {
   let output;
   if (input < 10) {
@@ -75,12 +71,6 @@ export let config: Config = {
   capabilities: {
     browserName: "chrome",
   },
-  // multiCapabilities: [{
-  //     "browserName": "chrome"
-  // },
-  // {
-  //     "browserName":"firefox"
-  // }],
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 600000 * 3,
@@ -204,44 +194,5 @@ export let config: Config = {
       exec.execSync(command);
       console.log("Report Converted to pdf successfully")
     });
-    // ...
-
-    // async..await is not allowed in global scope, must use a wrapper
-    // async function main() {
-    //   // Generate test SMTP service account from ethereal.email
-    //   // Only needed if you don't have a real mail account for testing
-    //   let testAccount = await nodemailer.createTestAccount();
-    //   // create reusable transporter object using the default SMTP transport
-    //   let transporter = await nodemailer.createTransport({
-    //     service: "Gmail",
-    //     port: 587,
-    //     secure: false, // true for 465, false for other ports
-    //     auth: {
-    //       user: process.env["email"].toString(), // generated ethereal user
-    //       pass: process.env["password"].toString(), // generated ethereal password
-    //     },
-    //   });
-    //   // send mail with defined transport object
-    //   let info = await transporter.sendMail({
-    //     from: params.nodeMailer.sendMail.fromUser, // sender address
-    //     to: params.nodeMailer.sendMail.toUser, // list of receivers
-    //     subject: params.nodeMailer.sendMail.subjectOfMail, // Subject line
-    //     text: params.nodeMailer.sendMail.textOfMail, // plain text body
-    //     priority: "high",
-    //     attachments: [
-    //       {
-    //         path: pdfReport,
-    //       },
-    //     ],
-    //   });
-
-    //   console.log("Message sent: %s", info.messageId);
-    //   // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    //   // Preview only available when sending through an Ethereal account
-    //   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    //   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    // }
-    // await main().catch(console.error);
   },
 };

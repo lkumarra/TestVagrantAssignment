@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="1" time="7.784">
- <testsuite name="Temprature Verfication Using web and api" timestamp="2020-09-20T15:57:08" hostname="localhost" time="7.784" errors="0" tests="1" skipped="0" disabled="0" failures="0">
-  <testcase classname="Temprature Verfication Using web and api" name="Verify the temprature using api and web" time="2.366" />
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="8.419">
+ <testsuite name="Temprature Verfication Using web and api" timestamp="2020-09-20T16:25:46" hostname="localhost" time="8.419" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="Temprature Verfication Using web and api" name="Verify the temprature using api and web" time="2.33">
+   <failure type="toBe" message="Expected false to be true."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (E:\NodeJsTestingProjects\TestVagrantFramework\e2e_tests\Tests\NDTVWeatherTest.js:18:181)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)]]>
+   </failure>
+  </testcase>
  </testsuite>
 </testsuites>

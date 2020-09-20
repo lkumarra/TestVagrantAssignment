@@ -16,6 +16,6 @@ describe("Temprature Verfication Using web and api", () => {
     });
   
     it('Verify the temprature using api and web', async function () {
-        expect(await utilities.tempComparator(await weatherApi.getWeatherUsingApi(weatherPageData.city), await weatherPage.getWeather(weatherPageData.city))).toBe(true)
+        expect(await utilities.tempComparator(await weatherApi.getWeatherUsingApi(weatherPageData.city), await weatherPage.getWeather(weatherPageData.city))).toBe(true, "Temprature Diffrence in API and Web is more than 2 Degree Celcius")
     });
   });

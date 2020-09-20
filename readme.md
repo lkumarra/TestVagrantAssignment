@@ -25,10 +25,11 @@
 
 	Junit , Pdf and Html Reports
 
+# For every fresh execution last execution report moves to OldTestReport Folder
 
 # TestExecution can also started by executing :
 # TestExecution started by Running Script_Running.exe:
-[![PDF](ScriptRunner.JPG)](https://github.com/lkumarra/ProtractorPageObjectModel/tree/master/Projects/Guru99BankTestAutomation/SampleReport/Script_Runner_New.JPG "ScripRuner")
+[![PDF](ScriptRunner.JPG)]
 
 1. Run Script_Runner.exe
 2. Click on Install Library Button

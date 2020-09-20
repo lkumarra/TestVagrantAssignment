@@ -16,10 +16,12 @@ export class Utilities {
     console.log("API temp in celcius is " + apiTempCelcius);
     let tempDifference: number = apiTempCelcius - webTempInInt;
     console.log("Temprature difference is " + tempDifference);
-    if (tempDifference <= -2 || tempDifference <= 2) {
+    let positiveTemp:number = 2+tempDifference;
+    if (positiveTemp>=0 && positiveTemp<=4) {
       return true;
-    } else {
+    }
+    else{
       return false;
     }
-  }
+    }
 }

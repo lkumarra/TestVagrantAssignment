@@ -37,7 +37,7 @@ export class TestUtil {
    */
   private static async elmentToBeClickableWait(
     webElement: ElementFinder,
-    time: number = 3000
+    time: number = 3500
   ) {
     await browser.wait(
       until.elementToBeClickable(webElement),
@@ -53,7 +53,7 @@ export class TestUtil {
    */
   private static async elementToBeVisiblePresent(
     webElement: ElementFinder,
-    time: number = 3000
+    time: number = 3500
   ) {
     await browser.wait(
       until.visibilityOf(webElement),

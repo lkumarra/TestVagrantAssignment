@@ -287,41 +287,53 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": false,
         "os": "windows",
-        "sessionId": "5e954f5cadf1c3cfbb90dd43c8b38e23",
-        "instanceId": 16392,
+        "sessionId": "bbf7ea39fe500cc06fce6d717ef1606c",
+        "instanceId": 4720,
         "browser": {
             "name": "chrome",
             "version": "85.0.4183.102"
         },
         "message": [
-            "Expected false to be true."
+            "Failed: Element is not present on page limit was 3000 milisecond\nWait timed out after 3042ms"
         ],
         "trace": [
-            "Error: Failed expectation\n    at UserContext.<anonymous> (E:\\NodeJsTestingProjects\\TestVagrantFramework\\e2e_tests\\Tests\\NDTVWeatherTest.js:18:181)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+            "TimeoutError: Element is not present on page limit was 3000 milisecond\nWait timed out after 3042ms\n    at E:\\NodeJsTestingProjects\\TestVagrantFramework\\node_modules\\selenium-webdriver\\lib\\promise.js:2201:17\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (E:\\NodeJsTestingProjects\\TestVagrantFramework\\e2e_tests\\Tests\\NDTVWeatherTest.js:17:5)\n    at addSpecsToSuite (E:\\NodeJsTestingProjects\\TestVagrantFramework\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (E:\\NodeJsTestingProjects\\TestVagrantFramework\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (E:\\NodeJsTestingProjects\\TestVagrantFramework\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (E:\\NodeJsTestingProjects\\TestVagrantFramework\\e2e_tests\\Tests\\NDTVWeatherTest.js:12:1)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)"
         ],
         "browserLogs": [
             {
                 "level": "WARNING",
                 "message": "https://securepubads.g.doubleclick.net/tag/js/gpt.js 5 Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened.",
-                "timestamp": 1600599349556,
+                "timestamp": 1600598398752,
                 "type": ""
             },
             {
                 "level": "WARNING",
                 "message": "https://edata.ndtv.com/coronavirus/jquery.3.4.1.js 1 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.",
-                "timestamp": 1600599349987,
+                "timestamp": 1600598399479,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://ds-aksb-a.akamaihd.net/aksb.min.js 21 chrome.loadTimes() is deprecated, instead use standardized API: Paint Timing. https://www.chromestatus.com/features/5637885046816768.",
+                "timestamp": 1600598400612,
                 "type": ""
             },
             {
                 "level": "SEVERE",
                 "message": "https://px.powerlinks.com/user/identify?sourceId=d4a7a706-ab0f-11e8-a038-127202fb7690&rurl=https%3A%2F%2Fsg-sync.taboola.com%2Fsg%2Fpowerlinksdsp-network%2F1%2Frtb-h%2F%3Ftaboola_hm%3D%24%7BUSER%7D&orig=trc - Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
-                "timestamp": 1600599352134,
+                "timestamp": 1600598400934,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://social.ndtv.com/static/Weather/report/js/leaflet.js?v=20112019.03 4:63656 Uncaught TypeError: Cannot read property 'addLayer' of undefined",
+                "timestamp": 1600598402997,
                 "type": ""
             }
         ],
-        "screenShotFile": "screenshots\\005800eb-0081-0057-004c-005000b90085.png",
-        "timestamp": 1600599352477,
-        "duration": 2329
+        "screenShotFile": "screenshots\\00c60028-005f-00ff-00ab-00070014009b.png",
+        "timestamp": 1600598401383,
+        "duration": 4672
     }
 ];
 

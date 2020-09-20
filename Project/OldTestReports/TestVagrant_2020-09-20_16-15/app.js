@@ -284,44 +284,39 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
     var results = [
     {
         "description": "Verify the temprature using api and web|Temprature Verfication Using web and api",
-        "passed": false,
+        "passed": true,
         "pending": false,
         "os": "windows",
-        "sessionId": "5e954f5cadf1c3cfbb90dd43c8b38e23",
-        "instanceId": 16392,
+        "sessionId": "496b5fb883c6dcfa437de51ed798334c",
+        "instanceId": 10088,
         "browser": {
             "name": "chrome",
             "version": "85.0.4183.102"
         },
-        "message": [
-            "Expected false to be true."
-        ],
-        "trace": [
-            "Error: Failed expectation\n    at UserContext.<anonymous> (E:\\NodeJsTestingProjects\\TestVagrantFramework\\e2e_tests\\Tests\\NDTVWeatherTest.js:18:181)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
-        ],
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [
             {
                 "level": "WARNING",
                 "message": "https://securepubads.g.doubleclick.net/tag/js/gpt.js 5 Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened.",
-                "timestamp": 1600599349556,
+                "timestamp": 1600598450988,
                 "type": ""
             },
             {
                 "level": "WARNING",
                 "message": "https://edata.ndtv.com/coronavirus/jquery.3.4.1.js 1 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.",
-                "timestamp": 1600599349987,
+                "timestamp": 1600598451560,
                 "type": ""
             },
             {
                 "level": "SEVERE",
                 "message": "https://px.powerlinks.com/user/identify?sourceId=d4a7a706-ab0f-11e8-a038-127202fb7690&rurl=https%3A%2F%2Fsg-sync.taboola.com%2Fsg%2Fpowerlinksdsp-network%2F1%2Frtb-h%2F%3Ftaboola_hm%3D%24%7BUSER%7D&orig=trc - Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
-                "timestamp": 1600599352134,
+                "timestamp": 1600598453118,
                 "type": ""
             }
         ],
-        "screenShotFile": "screenshots\\005800eb-0081-0057-004c-005000b90085.png",
-        "timestamp": 1600599352477,
-        "duration": 2329
+        "timestamp": 1600598453819,
+        "duration": 1534
     }
 ];
 
