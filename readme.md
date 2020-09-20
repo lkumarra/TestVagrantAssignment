@@ -27,9 +27,8 @@
 
 # For every fresh execution last execution report moves to OldTestReport Folder
 
-# TestExecution can also started by executing :
 # TestExecution started by Running Script_Running.exe:
-[![PDF](ScriptRunner.JPG)]
+![PDF](ScriptRunner.JPG)
 
 1. Run Script_Runner.exe
 2. Click on Install Library Button
