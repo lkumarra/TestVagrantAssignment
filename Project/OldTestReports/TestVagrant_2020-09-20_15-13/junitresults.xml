@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="2" time="8.691">
+ <testsuite name="Guru99Bank LoginPage TestCases WorkFlow " timestamp="2020-09-20T14:58:45" hostname="localhost" time="8.691" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Guru99Bank LoginPage TestCases WorkFlow " name="Login to Guru99Bank application" time="1.94" />
+  <testcase classname="Guru99Bank LoginPage TestCases WorkFlow " name="As a user I can get User using query string" time="0.453" />
+ </testsuite>
+</testsuites>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="1" time="19.838">
+ <testsuite name="Guru99Bank LoginPage TestCases WorkFlow " timestamp="2020-09-20T12:07:54" hostname="localhost" time="19.838" errors="0" tests="1" skipped="0" disabled="0" failures="2">
+  <testcase classname="Guru99Bank LoginPage TestCases WorkFlow " name="Login to Guru99Bank application" time="0.431">
+   <failure type="exception" message="Failed: Angular could not be found on the page https://www.ndtv.com/. If this is not an Angular application, you may need to turn off waiting for Angular.
+                          Please see 
+                          https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load"><![CDATA[Error: Angular could not be found on the page https://www.ndtv.com/. If this is not an Angular application, you may need to turn off waiting for Angular.
+                          Please see 
+                          https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load
+    at E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\built\browser.js:720:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Function.initialization (E:\NodeJsTestingProjects\GayltixExcercise\e2e_tests\Pages\BasePage\BasePage.js:12:9)
+    at UserContext.<anonymous> (E:\NodeJsTestingProjects\GayltixExcercise\e2e_tests\Tests\NDTVWeatherTest.js:10:9)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (E:\NodeJsTestingProjects\GayltixExcercise\e2e_tests\Tests\NDTVWeatherTest.js:9:5)
+    at addSpecsToSuite (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (E:\NodeJsTestingProjects\GayltixExcercise\e2e_tests\Tests\NDTVWeatherTest.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:93:5
+    at Array.forEach (<anonymous>)
+    at Jasmine.loadSpecs (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:92:18)
+    at Jasmine.execute (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:197:8)]]>
+   </failure>
+   <failure type="exception" message="Failed: Cannot read property &apos;getWeather&apos; of undefined"><![CDATA[TypeError: Cannot read property 'getWeather' of undefined
+    at UserContext.<anonymous> (E:\NodeJsTestingProjects\GayltixExcercise\e2e_tests\Tests\NDTVWeatherTest.js:14:39)
+    at E:\NodeJsTestingProjects\GayltixExcercise\node_modules\jasminewd2\index.js:112:25
+    at new Promise (<anonymous>)
+    at SimpleScheduler.promise (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+    at schedulerExecute (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\jasminewd2\index.js:95:18)
+    at E:\NodeJsTestingProjects\GayltixExcercise\node_modules\selenium-webdriver\lib\promise.js:2232:22
+    at new Promise (<anonymous>)
+    at SimpleScheduler.promise (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+    at SimpleScheduler.execute (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\selenium-webdriver\lib\promise.js:2227:17)
+    at UserContext.<anonymous> (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\jasminewd2\index.js:94:19)
+    at attempt (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at callWhenIdle (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\jasminewd2\index.js:62:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (E:\NodeJsTestingProjects\GayltixExcercise\e2e_tests\Tests\NDTVWeatherTest.js:13:5)
+    at addSpecsToSuite (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (E:\NodeJsTestingProjects\GayltixExcercise\e2e_tests\Tests\NDTVWeatherTest.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:93:5
+    at Array.forEach (<anonymous>)
+    at Jasmine.loadSpecs (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:92:18)
+    at Jasmine.execute (E:\NodeJsTestingProjects\GayltixExcercise\node_modules\protractor\node_modules\jasmine\lib\jasmine.js:197:8)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
